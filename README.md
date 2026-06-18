@@ -1,4 +1,4 @@
-# 🍽️ Leftovers Recipe Generator
+# 🍽️ Pantry-to-Plate
 
 **Turn nothing into something** - Transform your fridge leftovers into delicious, restaurant-quality meals with our intelligent recipe generator.
 
