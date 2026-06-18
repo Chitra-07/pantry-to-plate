@@ -55,8 +55,8 @@ leftovers-recipe-generator/
 
 ```bash
 # Clone the repository
-git clone https://github.com/Dusica77/Leftovers-recipe-generator.git
-cd leftovers-recipe-generator
+git clone https://github.com/Chitr/pantry-to-plate.git
+cd pantry-to-plate
 
 # Navigate to backend
 cd backend
