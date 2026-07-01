@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import CryingFridgeIcon from '../components/CryingFridgeIcon';
+import PantryIcon from '../components/PantryIcon';
 
 function Landing({ token, user, onLogout }) {
   return (
@@ -39,14 +39,14 @@ function Landing({ token, user, onLogout }) {
         }}>
           <div className="fade-in-up" style={{ textAlign: 'center' }}>
             <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem' }}>
-              <div style={{
+                <div style={{
                 background: 'white',
                 padding: '12px',
                 borderRadius: '50%',
                 boxShadow: '0 12px 30px rgba(232,117,154,0.12)',
                 border: '1px solid rgba(212,90,122,0.12)'
               }}>
-                <CryingFridgeIcon size={42} />
+                <PantryIcon size={42} />
               </div>
             </div>
             <h1 style={{
@@ -57,7 +57,7 @@ function Landing({ token, user, onLogout }) {
               marginBottom: '1rem',
               fontFamily: "'Playfair Display', serif"
             }}>
-              WhatsNotHere
+              Pantry to Plate
             </h1>
             <p style={{
               fontSize: '1.3rem',
@@ -96,7 +96,7 @@ function Landing({ token, user, onLogout }) {
           marginBottom: '3rem',
           fontFamily: "'Playfair Display', serif"
         }}>
-          Why WhatsNotHere?
+          Why Pantry to Plate?
         </h2>
         
         <div style={{

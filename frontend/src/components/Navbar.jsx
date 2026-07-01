@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Heart, User, LogOut, Home, BookMarked, Flower2, Sparkles, ShoppingCart } from 'lucide-react';
 import { motion } from 'framer-motion';
-import CryingFridgeIcon from './CryingFridgeIcon';
+import PantryIcon from './PantryIcon';
 
 function Navbar({ user, onLogout }) {
   const navigate = useNavigate();
@@ -32,19 +32,19 @@ function Navbar({ user, onLogout }) {
       }}
     >
       <Link to="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '10px' }}>
-        <motion.div
+          <motion.div
           whileHover={{ rotate: 180, scale: 1.1 }}
           transition={{ duration: 0.5 }}
           style={{
             background: 'linear-gradient(135deg, #FFB7C5, #f7489f)',
-            padding: '8px',
+            padding: '10px',
             borderRadius: '50%',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             boxShadow: '0 4px 10px rgba(255,183,197,0.3)'
           }}>
-          <CryingFridgeIcon size={18} />
+          <PantryIcon size={36} />
         </motion.div>
         <div>
           <h1 style={{
@@ -57,7 +57,7 @@ function Navbar({ user, onLogout }) {
             fontWeight: 700,
             margin: 0
           }}>
-            WhatsNotHere
+            Pantry to Plate
           </h1>
           <p style={{ fontSize: '9px', color: '#FFB7C5', margin: 0, letterSpacing: '1px' }}>cry less, cook more ✧</p>
           <p style={{ fontSize: '9px', color: '#FFB7C5', margin: 0, letterSpacing: '1px' }}>save what you love ✧</p>

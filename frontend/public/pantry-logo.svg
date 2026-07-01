@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0" stop-color="#FFF1F6"/>
+      <stop offset="1" stop-color="#FFEFF6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- circular badge -->
+  <circle cx="100" cy="100" r="96" fill="url(#g1)" stroke="#FFB7C5" stroke-width="4" />
+
+  <!-- left pantry -->
+  <g transform="translate(22,34)">
+    <rect x="0" y="0" width="76" height="108" rx="6" fill="#FFF8F3" stroke="#E78AA6" stroke-width="2"/>
+    <rect x="6" y="14" width="64" height="10" rx="2" fill="#FFDDE6"/>
+    <rect x="10" y="30" width="56" height="6" rx="1.5" fill="#FFE9D6"/>
+    <rect x="10" y="46" width="56" height="6" rx="1.5" fill="#FFF1C7"/>
+
+    <!-- jars -->
+    <rect x="14" y="36" width="12" height="18" rx="2" fill="#DFF3D9" stroke="#2E6B3A" stroke-width="0.8"/>
+    <rect x="32" y="36" width="12" height="18" rx="2" fill="#FFD9C7" stroke="#B67A4A" stroke-width="0.8"/>
+    <rect x="50" y="36" width="12" height="18" rx="2" fill="#FFF1C7" stroke="#B67A4A" stroke-width="0.8"/>
+    <rect x="14" y="60" width="48" height="16" rx="3" fill="#FFE9D6" stroke="#D9976E" stroke-width="0.6"/>
+  </g>
+
+  <!-- arrow -->
+  <g>
+    <path d="M108 86 L138 86" stroke="#FF6F9A" stroke-width="6" stroke-linecap="round"/>
+    <path d="M132 76 L142 86 L132 96" fill="#FF6F9A" stroke="#FF6F9A" stroke-width="1" stroke-linejoin="round"/>
+  </g>
+
+  <!-- plate -->
+  <g transform="translate(120,64)">
+    <ellipse cx="0" cy="36" rx="40" ry="24" fill="#FFFFFF" stroke="#E78AA6" stroke-width="2"/>
+    <path d="M-28 36 C-18 8, 36 8, 48 36 C36 50, -18 50, -28 36 Z" fill="#FFE9D6" stroke="#D9976E" stroke-width="1"/>
+    <path d="M-8 30 C0 26, 8 34, 18 28" stroke="#FF8AA6" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <path d="M2 34 C8 30, 18 36, 26 32" stroke="#FF7A8F" stroke-width="3" stroke-linecap="round" fill="none"/>
+    <circle cx="-2" cy="28" r="3" fill="#2E6B3A"/>
+    <circle cx="12" cy="30" r="3" fill="#E05A2A"/>
+    <path d="M18 12 C22 6, 34 6, 36 12 C34 8, 30 6, 28 10 C26 6, 20 6, 18 12 Z" fill="#FFB7C5" opacity="0.9"/>
+  </g>
+
+</svg>

@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { Clock, Bookmark, ChevronDown, ChevronUp, CheckCircle, Flame, Heart, Sparkles, Zap, Timer } from 'lucide-react';
+import { Clock, Bookmark, ChevronDown, ChevronUp, CheckCircle, Flame, Heart, Sparkles, Zap, Timer, ShoppingCart } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const API_URL = 'http://localhost:5000/api';
@@ -94,6 +94,7 @@ function RecipeCard({ recipe, onSave, isSaved, token, shoppingListItems }) {
   const [showFullInstructions, setShowFullInstructions] = React.useState(false);
   const [imageLoaded, setImageLoaded] = React.useState(false);
   const missingItems = shoppingListItems || [...(recipe.missingRequiredItems || []), ...(recipe.missingPantryItems || [])];
+  const usedSelectedCount = (recipe.usedSelectedIngredients && recipe.usedSelectedIngredients.length) || 0;
 
   const handleSave = async () => {
     if (!token) {
@@ -286,7 +287,7 @@ function RecipeCard({ recipe, onSave, isSaved, token, shoppingListItems }) {
             color: '#FF1493',
             textAlign: 'center'
           }}>
-            <strong>{recipe.matchPercentage}% match</strong> — you have {recipe.usedSelectedCount} of {recipe.totalRequired} key ingredients
+            <strong>{recipe.matchPercentage}% match</strong> — you have {usedSelectedCount} of {recipe.totalRequired} key ingredients
           </div>
         )}
         
